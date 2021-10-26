@@ -1,7 +1,10 @@
 # Table of contents
 
 * [Welcome!](README.md)
-* [Overview](overview.md)
+
+## New Types
+
+* [교차 타입 (Intersection Types)](new-types/intersection-types.md)
 
 ## The Company
 
