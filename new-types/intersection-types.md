@@ -53,4 +53,9 @@ val ys: List[A & B] = x.children
 
 따라서 `A`와 `B`를 상속하는 클래스 `C`를 정의한다면 해당 시점에 요구된 타입으로 `children` 메소드를 정의해야 한다.
 
+```scala
+class C extends A, B:
+  def children: List[A & B] = ???
+```
+
 [More Detail](https://docs.scala-lang.org/scala3/reference/new-types/intersection-types-spec.html)
