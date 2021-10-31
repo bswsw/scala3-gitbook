@@ -4,7 +4,7 @@
 
 ## 타입 체크 (Type checking)
 
-`S & T` 타입은 동시에 `S` , `T` 타입을 사용할 수 있음을 표현 한다.
+`S & T` 타입은 동시에 `S`, `T` 타입을 사용할 수 있음을 표현 한다.
 
 ```scala
 trait Resettable:
@@ -24,7 +24,7 @@ def fun(x: Resettable & Growable[String]) =
 
 `Resettable & Growable[String]` 타입은 `reset`, `add` 메소드 모두 가지고 있다.
 
-`&` 연산자는 가환성(Commutative)를 가지므로 `A & B`와 `B & A`는 같은 타입이다.
+`&` 연산자는 교환법칙(_commutative_)을 성립하므로 `A & B`와 `B & A`는 같은 의미이다.
 
 만약 멤버가 `A`와 `B` 타입에 모두 존재한다면 `A & B` 는 `A`와 `B`의 교집합이다.
 
@@ -41,7 +41,7 @@ val ys: List[A & B] = x.children
 
 `A & B`의 `children`은 `A`와 `B`의 `children`의 교집합이며 `List[A] & List[B]` 이다.
 
-`List`는 공변적 (covariant) 이기 때문에 `List[A & B]`로 단순화 할 수 있다.
+`List`는 공변적 (_covariant_) 이기 때문에 `List[A & B]`로 단순화 할 수 있다.
 
 컴파일러는 어떻게 `List[A] & List[B]`을 `List[A & B]`로 어떻게 단순화 될 수 있을까?
 
