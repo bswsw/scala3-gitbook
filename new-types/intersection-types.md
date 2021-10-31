@@ -24,7 +24,7 @@ def fun(x: Resettable & Growable[String]) =
 
 `Resettable & Growable[String]` 타입은 `reset`, `add` 메소드 모두 가지고 있다.
 
-`&` 연산자는 교환법칙(_commutative_)을 성립하므로 `A & B`와 `B & A`는 같은 의미이다.
+`&` 연산자는 교환법칙(_commutative_)이 성립되므로 `A & B`와 `B & A`는 같은 의미이다.
 
 만약 멤버가 `A`와 `B` 타입에 모두 존재한다면 `A & B` 는 `A`와 `B`의 교집합이다.
 
