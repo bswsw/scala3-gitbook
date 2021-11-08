@@ -5,6 +5,7 @@
 ## New Types
 
 * [교차 타입 (Intersection Types)](new-types/intersection-types.md)
+* [공용체 타입 (Union Types)](new-types/union-types.md)
 
 ## The Company
 
