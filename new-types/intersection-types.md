@@ -1,6 +1,6 @@
-# 교차 타입 (Intersection Types)
+# 교집합 타입 (Intersection Types)
 
-`&` 연산자를 사용하여 교차 타입 (Intersection type) 을 생성할 수 있다.
+`&` 연산자를 사용하여 교집합 타입 (Intersection type) 을 생성할 수 있다.
 
 ## 타입 체크 (Type checking)
 
@@ -43,7 +43,7 @@ val ys: List[A & B] = x.children
 
 `List`는 공변적 (_covariant_) 이기 때문에 `List[A & B]`로 단순화 할 수 있다.
 
-컴파일러는 어떻게 `List[A] & List[B]`을 `List[A & B]`로 어떻게 단순화 될 수 있을까?
+컴파일러는 어떻게 `List[A] & List[B]`을 `List[A & B]`로 어떻게 단순화 할 수 있을까?
 
 정답은 컴파일러는 필요 없다.
 
