@@ -6,6 +6,7 @@
 
 * [교차 타입 (Intersection Types)](new-types/intersection-types.md)
 * [공용체 타입 (Union Types)](new-types/union-types.md)
+* [타입 람다 (Type Lambdas)](new-types/type-lambdas.md)
 
 ## The Company
 
